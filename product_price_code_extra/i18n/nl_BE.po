@@ -1,0 +1,116 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* product_price_code_extra
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-26 12:03+0000\n"
+"PO-Revision-Date: 2022-05-26 12:03+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: product_price_code_extra
+#: model:ir.model.fields,field_description:product_price_code_extra.field_sale_order_line_report__partner_id
+#: model_terms:ir.ui.view,arch_db:product_price_code_extra.sale_order_line_report_view_search
+msgid "Customer"
+msgstr "Klant"
+
+#. module: product_price_code_extra
+#: model:ir.model.fields,field_description:product_price_code_extra.field_product_product__display_name
+#: model:ir.model.fields,field_description:product_price_code_extra.field_sale_order_line__display_name
+#: model:ir.model.fields,field_description:product_price_code_extra.field_sale_order_line_report__display_name
+msgid "Display Name"
+msgstr "Weergavenaam"
+
+#. module: product_price_code_extra
+#: model_terms:ir.ui.view,arch_db:product_price_code_extra.sale_order_line_report_view_search
+msgid "Group By"
+msgstr "Groeperen op"
+
+#. module: product_price_code_extra
+#: model:ir.model.fields,field_description:product_price_code_extra.field_product_product__honestus_code
+#: model:ir.model.fields,field_description:product_price_code_extra.field_sale_order_line_report__product_honestus_code
+msgid "Honestus Code"
+msgstr "Honestus Code"
+
+#. module: product_price_code_extra
+#: model:ir.model.fields,field_description:product_price_code_extra.field_product_product__honestus_price
+#: model:ir.model.fields,field_description:product_price_code_extra.field_sale_order_line_report__price_honestus
+msgid "Honestus Price"
+msgstr "Honestus prijs"
+
+#. module: product_price_code_extra
+#: model:ir.model.fields,field_description:product_price_code_extra.field_product_product__id
+#: model:ir.model.fields,field_description:product_price_code_extra.field_sale_order_line__id
+#: model:ir.model.fields,field_description:product_price_code_extra.field_sale_order_line_report__id
+msgid "ID"
+msgstr "ID"
+
+#. module: product_price_code_extra
+#: model:ir.model.fields,field_description:product_price_code_extra.field_product_product____last_update
+#: model:ir.model.fields,field_description:product_price_code_extra.field_sale_order_line____last_update
+#: model:ir.model.fields,field_description:product_price_code_extra.field_sale_order_line_report____last_update
+msgid "Last Modified on"
+msgstr "Laatst gewijzigd op"
+
+#. module: product_price_code_extra
+#: model:ir.model.fields,field_description:product_price_code_extra.field_sale_order_line_report__margin
+msgid "Margin"
+msgstr "Marge"
+
+#. module: product_price_code_extra
+#: model:ir.ui.menu,name:product_price_code_extra.menu_order_line_report_all
+msgid "Order Line Analysis"
+msgstr "Orderregelanalyse"
+
+#. module: product_price_code_extra
+#: model:ir.model.fields,field_description:product_price_code_extra.field_sale_order_line_report__name
+#: model_terms:ir.ui.view,arch_db:product_price_code_extra.sale_order_line_report_view_search
+msgid "Order Reference"
+msgstr "Bestelreferentie"
+
+#. module: product_price_code_extra
+#: model:ir.model,name:product_price_code_extra.model_product_product
+msgid "Product"
+msgstr "Product"
+
+#. module: product_price_code_extra
+#: model:ir.model.fields,field_description:product_price_code_extra.field_sale_order_line_report__product_code
+#: model_terms:ir.ui.view,arch_db:product_price_code_extra.sale_order_line_report_view_search
+msgid "Product Code"
+msgstr "Productcode"
+
+#. module: product_price_code_extra
+#: model:ir.model,name:product_price_code_extra.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Verkooporderregel"
+
+#. module: product_price_code_extra
+#: model:ir.actions.act_window,name:product_price_code_extra.action_order_line_report_all
+#: model_terms:ir.ui.view,arch_db:product_price_code_extra.sale_order_line_report_view_graph
+#: model_terms:ir.ui.view,arch_db:product_price_code_extra.sale_order_line_report_view_pivot
+#: model_terms:ir.ui.view,arch_db:product_price_code_extra.sale_order_line_report_view_search
+#: model_terms:ir.ui.view,arch_db:product_price_code_extra.sale_order_line_report_view_tree
+msgid "Sales Order Line Analysis"
+msgstr "Analyse verkooporderregels"
+
+#. module: product_price_code_extra
+#: model:ir.model,name:product_price_code_extra.model_sale_order_line_report
+msgid "Sales Order Line Analysis Report"
+msgstr "Analyserapport verkooporderregel"
+
+#. module: product_price_code_extra
+#: model_terms:ir.actions.act_window,help:product_price_code_extra.action_order_line_report_all
+msgid "This report performs analysis on your sale order lines."
+msgstr "Dit rapport voert analyses uit op uw verkooporderregels."
+
+#. module: product_price_code_extra
+#: model:ir.model.fields,field_description:product_price_code_extra.field_sale_order_line_report__price_unit
+msgid "Unit Price"
+msgstr "Stuksprijs"
