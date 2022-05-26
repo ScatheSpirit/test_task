@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="product_normal_form_view" model="ir.ui.view">
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="product.product_normal_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='default_code']" position="after">
+                    <field name="honestus_code" attrs="{'required': [('default_code', '!=', False)]}"/>
+                </xpath>
+                <xpath expr="//group[@name='group_standard_price']" position="inside">
+                    <field name="honestus_price" widget='monetary'
+                           options="{'currency_field': 'currency_id', 'field_digits': True}"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="report_saleorder_document" inherit_id="sale.report_saleorder_document">
+
+		<!--#TODO: This fragment is NOT FOR REAL PRODUCTS!!! It was made ONLY WITHIN TEST TASK #3!!!
+		It causes the amount values to be recalculated for the report only, and then recalculates back.
+		Made only for the fact that with a changed Unit Price in the report, the sums are also recalculated.
+		FOR CLARITY!
+		In real projects, the numbers in the report should, I think, match the numbers in the Sale Order itself.
+		In this case, I would rewrite the function of recalculating sums in sale.order.line (_compute_amount())
+		for the SO itself as a whole-->
+		<xpath expr="//tbody[@class='sale_tbody']" position="before">
+			<t t-set="recompute_amount" t-value="doc.order_line.with_context(honestus_price=True)._compute_amount()"/>
+		</xpath>
+		<xpath expr="//div[@class='page']" position="after">
+			<t t-set="recompute_amount" t-value="doc.order_line.with_context(honestus_price=False)._compute_amount()"/>
+		</xpath>
+		<!--########################################################################################################-->
+
+		<xpath expr="//table//td[@name='td_name']" position="replace">
+			<td name="td_name">
+				<span t-esc="line.get_line_name_for_honestus_report()"/>
+			</td>
+		</xpath>
+		<xpath expr="//table//td[@name='td_priceunit']" position="replace">
+			<td name="td_priceunit" class="text-right">
+				<t t-if="line.product_id.honestus_price">
+					<span t-field="line.product_id.honestus_price"/>
+				</t>
+				<t t-else="">
+					<span t-field="line.price_unit"/>
+				</t>
+			</td>
+		</xpath>
+	</template>
+</odoo>
