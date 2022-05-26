@@ -3,7 +3,7 @@ Mobile for signup
 ==================
 
 
-##**For correct setting:**##
+## **For correct setting:** ##
 
 #. Go to 'Settings' > 'General Settings'
 #. In the "Permissions" section, for the 'Customer Account' item, select "Free sign up".
