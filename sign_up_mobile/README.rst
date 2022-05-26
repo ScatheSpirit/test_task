@@ -8,7 +8,7 @@ Mobile for signup
 #. Go to 'Settings' > 'General Settings'
 #. In the "Permissions" section, for the 'Customer Account' item, select "Free sign up".
 
-.. image:: sign_up_mobile/static/description/free_sign_up_settings.png
+.. image:: ../sign_up_mobile/static/description/free_sign_up_settings.png
    :width: 100%
 
 
@@ -17,7 +17,7 @@ Mobile for signup
 **This module add field 'Mobile' to Authorization and 'Account detail' forms.**
 
 .. image:: ../sign_up_mobile/static/description/signup_form.png
-   :width: 100%
+   :width: 50%
 
 **Of course, it can be edited from the Account detail form on the portal.**
 
